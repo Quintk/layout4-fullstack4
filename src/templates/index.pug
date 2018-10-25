@@ -1,0 +1,65 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-slider
+		.owl-carousel.owl-theme
+			.item
+				figure
+					img(src="./img/home-slide-1.png", alt="")
+					figcaption
+						h2 Chúng tôi là FullStack Vietnam
+						p Full Stack Developer là nghề cực hot hiện nay, những lập trình- Full Stack có đầy đủ những kỹ năng tổng hợp 
+			.item
+				figure
+					img(src="./img/home-slide-2.png", alt="")
+					figcaption
+						h2 Chúng tôi là FullStack Vietnam
+						p Full Stack Developer là nghề cực hot hiện nay, những lập trình-Full Stack có đầy đủ những kỹ năng tổng hợp 
+	section.home-news
+		.container
+			.row
+				h2.mt-5 TIN TỨC
+			.row
+				.col-md-4.item
+					figure
+						.box
+							img(src="./img/img-01.png", alt="", srcset="")
+						figcaption
+							date 22/06/2018
+							h4 Trung tâm đào tạo IT chuyên nghiệp
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi porro quae, accusamus voluptatum, ex eius quod enim nostrum repellendus aliquid adipisci nesciunt autem vitae. Vero vitae deserunt ad pariatur cumque.
+				.col-md-4.item
+					figure
+						.box
+							img(src="./img/img-01.png", alt="", srcset="")
+						figcaption
+							date 22/06/2018
+							h4 Trung tâm đào tạo IT chuyên nghiệp
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi porro quae, accusamus voluptatum, ex eius quod enim nostrum repellendus aliquid adipisci nesciunt autem vitae. Vero vitae deserunt ad pariatur cumque.
+				.col-md-4.item
+					figure
+						.box
+							img(src="./img/img-01.png", alt="", srcset="")
+						figcaption
+							date 22/06/2018
+							h4 Trung tâm đào tạo IT chuyên nghiệp
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi porro quae, accusamus voluptatum, ex eius quod enim nostrum repellendus aliquid adipisci nesciunt autem vitae. Vero vitae deserunt ad pariatur cumque.
+	//- section.home-clients.mt-5
+	//- 	.container
+	//- 		.row
+	//- 			.col
+	//- 				.owl-carousel.owl-theme
+	//- 					- for(x=1;x<10;x++)
+	//- 						.item
+	//- 							if (x < 7)
+	//- 								img(src="./img/clients_"+x+".png", alt="")
+	//- 							else
+	//- 								img(src="./img/clients_"+(x-3)+".png", alt="")

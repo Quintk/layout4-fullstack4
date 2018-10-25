@@ -1,0 +1,20 @@
+header
+	background: #fff
+	.navbar
+		+pad(null 0)
+	.navbar-brandy
+		img 
+			max-height: 2rem
+	+media-breakpoint-up(md)
+		.navbar-brand
+			img 
+				max-height: 3rem
+	.navbar-nav
+		li
+			padding: 1.3rem
+			a
+				font-weight: bold
+				+media-breakpoint-up(md)
+				&:hover
+					background: #00c4c9
+					color: #fff !important
