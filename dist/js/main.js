@@ -49,7 +49,7 @@ $(document).ready(function () {
 		autoplaySpeed: 2000,
 		dots: true
 	});
-	$(".slider .slide .owl-carousel").owlCarousel({
+	$(".home-clients .owl-carousel").owlCarousel({
 		loop: true,
 		margin: 10,
 		autoplay: true,
