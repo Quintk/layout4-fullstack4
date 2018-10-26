@@ -1,3 +1,69 @@
 footer
-	img 
-		max-width: 200px
+	background: #3498db
+			color: white
+			.container
+				display: flex
+				align-items: center
+				justify-content: center
+				.text
+					margin-top: 1rem
+					margin-bottom: 1rem
+				.text3
+					margin-top: 1rem
+				.form
+					form
+						.form-group
+							label
+								font-size: 1.5rem
+								font-weight: bold
+							.form-control
+								position: relative
+								margin-bottom: 2rem
+							button
+								position: absolute
+								width: 5rem
+								height: 2rem
+								top: 61px
+								right: 18px
+								color: white
+								font-size: 1rem
+								text-align: center
+				+media-breakpoint-up(md)
+					.text3
+						margin-top: 4.85rem	
+		footer
+			background: #3F51B5
+			.copyright
+				display: flex
+				align-items: center
+				transform: translateY(-10%)
+			.fa.fa-twitter
+				width: 3rem
+				height: 3rem
+				background: gray
+				border-radius: 50%
+				position: relative
+				color: white
+				margin: .5rem .5rem
+				&:before
+					position: absolute
+					bottom: 14px
+					right: 14px
+				&:hover
+					background: white
+					color: black
+			.fa.fa-facebook
+				width: 3rem
+				height: 3rem
+				background: gray
+				border-radius: 50%
+				position: relative
+				color: white
+				margin: .5rem .5rem
+				&:before
+					position: absolute
+					bottom: 14px
+					right: 17px
+				&:hover
+					background: white
+					color: black

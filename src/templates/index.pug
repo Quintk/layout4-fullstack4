@@ -23,43 +23,185 @@ block body
 					figcaption
 						h2 Chúng tôi là FullStack Vietnam
 						p Full Stack Developer là nghề cực hot hiện nay, những lập trình-Full Stack có đầy đủ những kỹ năng tổng hợp 
+	//- Phần news
 	section.home-news
 		.container
+			.row.text-center.justify-content-center
+				h2.mt-5.title TIN TỨC
+			.row.mt-5
+				.col-md-4.item
+					figure
+						.box
+							img(src="./img/img-01.png", alt="", srcset="")
+						figcaption
+							date 22/06/2018
+							h4 Trung tâm đào tạo IT chuyên nghiệp
+							p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón
+				.col-md-4.item
+					figure
+						.box
+							img(src="./img/img-01.png", alt="", srcset="")
+						figcaption
+							date 22/06/2018
+							h4 Trung tâm đào tạo IT chuyên nghiệp
+							p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón
+				.col-md-4.item
+					figure
+						.box
+							img(src="./img/img-01.png", alt="", srcset="")
+						figcaption
+							date 22/06/2018
+							h4 Trung tâm đào tạo IT chuyên nghiệp
+							p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón
+	//- Phần Định hướng phát triển 
+	section.home-group
+		.container
+			.row.mt-3.text-center
+				.col
+					h2.title ĐỊNH HƯỚNG PHÁT TRIỂN
+			.row.mt-5
+				.col-md-3.text-center.text-md-left.mt-5.mb-3
+					h3.fa.fa-copy
+					h4 TẦM NHÌN
+					p.mt-4 Cam kết chất lượng sản phẩm cao nhất 
+					p Luôn đặt chữ tín lên hàng đầu 
+					p Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-md-3.text-center.text-md-left.mt-5.mb-3
+					h3.fa.fa-moon-o
+					h4 TẦM NHÌN
+					p.mt-4 Cam kết chất lượng sản phẩm cao nhất 
+					p Luôn đặt chữ tín lên hàng đầu 
+					p Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-md-3.text-center.text-md-left.mt-5.mb-3
+					h3.fa.fa-object-group
+					h4 TẦM NHÌN
+					p.mt-4 Cam kết chất lượng sản phẩm cao nhất 
+					p Luôn đặt chữ tín lên hàng đầu 
+					p Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-md-3.text-center.text-md-left.mt-5.mb-3
+					h3.fa.fa-floppy-o
+					h4 TẦM NHÌN
+					p.mt-4 Cam kết chất lượng sản phẩm cao nhất 
+					p Luôn đặt chữ tín lên hàng đầu 
+					p Lấy lợi ích của khách hàng làm trung tâm hoạt động
+	section.home-group2
+		.container
+			.row.text-center
+				.col
+					p.mt-5 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolorem modi earum. Eligendi excepturi vero id sint quia qui voluptatem magnam similique alias rerum animi labore saepe laborum, deleniti eaque.
+			.row.mt-5.text-center
+				.col.text-center
+					.btn.button(href="#") XEM THÊM
+	section.home-group3
+		.container
+			.row.text-center.mt-5
+				.col
+					h2.title ĐỊNH HƯỚNG PHÁT TRIỂN
+			.row.mt-4
+				.col
+					ul#myTab.nav.nav-tabs.text-center.justify-content-center(role='tablist')
+						li.nav-item
+							a#home-tab.nav-link(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Tất cả
+						li.nav-item
+							a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Group
+						li.nav-item
+							a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria:    controls='contact', aria-selected='false') Tin thị trường
+						li.nav-item
+							a#news-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Tin vịt
+				#myTabContent.tab-content
+					#home.tab-pane.mt-3.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+						.row
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+					#profile.tab-pane.mt-3.fade(role='tabpanel', aria-labelledby='profile-tab') 
+						.row
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+					#contact.tab-pane.mt-3.fade(role='tabpanel', aria-labelledby='contact-tab')
+						.row
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+							.col-md-4.item
+								figure
+									.box
+										img.img-fluid(src="./img/img-04.png", alt="")
+	section.home-ceo
+		.container
+			.row.mt-5.text-center.justify-content-center
+				.col
+					h2.mt-5 KHÁCH HÀNG NÓI
+		.owl-carousel.owl-theme
+			.item
+				.row
+					.col.text-center
+						figure
+							.box-img-customer
+								img.img-fluid(style="width:10%")(src="./img/img-ceo.png", alt="", srcset="")
+							figcaption
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla id unde modi, earum magni hic. Quae iusto perspiciatis nostrum, minus alias consequatur quibusdam, natus et reiciendis facere architecto numquam odio!
+								p.name Pelican Steve
+								p CEO ABC Company
+			.item
+				.row
+					.col.text-center
+						figure
+							.box-img-customer
+								img.img-fluid(style="width:10%")(src="./img/img-ceo.png", alt="", srcset="")
+							figcaption
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla id unde modi, earum magni hic. Quae iusto perspiciatis nostrum, minus alias consequatur quibusdam, natus et reiciendis facere architecto numquam odio!
+								p.name Pelican Steve
+								p CEO ABC Company
+			.item
+				.row
+					.col.text-center
+						figure
+							.box-img-customer
+								img.img-fluid(style="width:10%")(src="./img/img-ceo.png", alt="", srcset="")
+							figcaption
+								p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla id unde modi, earum magni hic. Quae iusto perspiciatis nostrum, minus alias consequatur quibusdam, natus et reiciendis facere architecto numquam odio!
+								p.name Pelican Steve
+								p CEO ABC Company
+	section.home-clients
+		.container
 			.row
-				h2.mt-5 TIN TỨC
-			.row
-				.col-md-4.item
-					figure
-						.box
-							img(src="./img/img-01.png", alt="", srcset="")
-						figcaption
-							date 22/06/2018
-							h4 Trung tâm đào tạo IT chuyên nghiệp
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi porro quae, accusamus voluptatum, ex eius quod enim nostrum repellendus aliquid adipisci nesciunt autem vitae. Vero vitae deserunt ad pariatur cumque.
-				.col-md-4.item
-					figure
-						.box
-							img(src="./img/img-01.png", alt="", srcset="")
-						figcaption
-							date 22/06/2018
-							h4 Trung tâm đào tạo IT chuyên nghiệp
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi porro quae, accusamus voluptatum, ex eius quod enim nostrum repellendus aliquid adipisci nesciunt autem vitae. Vero vitae deserunt ad pariatur cumque.
-				.col-md-4.item
-					figure
-						.box
-							img(src="./img/img-01.png", alt="", srcset="")
-						figcaption
-							date 22/06/2018
-							h4 Trung tâm đào tạo IT chuyên nghiệp
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi porro quae, accusamus voluptatum, ex eius quod enim nostrum repellendus aliquid adipisci nesciunt autem vitae. Vero vitae deserunt ad pariatur cumque.
-	//- section.home-clients.mt-5
-	//- 	.container
-	//- 		.row
-	//- 			.col
-	//- 				.owl-carousel.owl-theme
-	//- 					- for(x=1;x<10;x++)
-	//- 						.item
-	//- 							if (x < 7)
-	//- 								img(src="./img/clients_"+x+".png", alt="")
-	//- 							else
-	//- 								img(src="./img/clients_"+(x-3)+".png", alt="")
+				.col
+					.slide.pb-4.mt-4
+							.owl-carousel.owl-theme
+								.items
+									img.img-fluid(src="./img/clients-1.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/clients-2.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/clients-3.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/clients-4.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/clients-5.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/clients-6.png", alt="", srcset="")

@@ -13,8 +13,7 @@
 					left: 0
 					bottom: 0
 					width: 100%
-					// transform: translateX(-50%)
-					background: linear-gradient(0deg, #101010eb, #2e2e3100);
+					background: linear-gradient(0deg, #101010eb, #2e2e3100)
 					color: #fff
 					h2
 						font-size: 1rem
@@ -46,6 +45,8 @@
 // Phần News
 /////////////////////////////////
 .home-news
+	.title
+		font-weight: bolder
 	.item
 		figure
 			.box
@@ -78,16 +79,163 @@
 // Phần News
 /////////////////////////////////
 
-.home-clients
+.home-group
+	background-image: url(../img/home-dev.png)
+	background-size: cover
+	+pad(4rem 0)
+	+media-breakpoint-up(md)
+		padding-top: 6rem
+		padding-bottom: 8rem
+	.title
+		font-weight: bolder
+		+fz(1.9rem)
+		+fw(700)
+		text-transform: uppercase
+		position: relative
+		padding-bottom: 1.2rem
+		+title()
+	.fa
+		font-size: 5rem
+		&:hover
+			color: #00c4c9
+	h4
+		margin-top: 1rem
+		font-weight: bold
+	p
+		margin: 0.2rem
+		color: darken(whitesmoke,50%)
+.home-group2
+	background-image: url(../img/home-noted.png)
+	background-size: cover
+	+pad(3rem 0)
+	p
+		color: #ffffff
+	.button
+		background: #00c4c9
+		border-radius: 4rem
+		color: #ffffff
+		+pad(.75rem 3rem)
+		+fz(1rem)
+	+media-breakpoint-up(md)
+		+pad(5rem)
+		p
+			font-size: 1.7rem
+		.button
+			+pad(.8rem 4rem)
+			+fz(1.3rem)
+			text-transform: uppercase
+			border-radius: 4rem
+			margin-top: 3.5rem
+			&:hover
+				background: darken($duong,25%)
+.home-group3
+	.title
+		font-weight: bolder
+		+fz(1.9rem)
+		+fw(700)
+		text-transform: uppercase
+		position: relative
+		padding-bottom: 1.2rem
+		+title()
+	.nav
+		border: 0
+		.nav-link
+			text-transform: uppercase
+			display: inline-block
+			+mar(.2rem .3rem)
+			padding: .3rem 1rem
+			color: $blacks
+			font-weight: bold
+			list-style-type: none
+			&.active,&:hover
+				background: $duong
+				color: white
+				border-radius: 1rem
+	.tab-content
+		figure
+			.box
+				position: relative
+				img
+					max-width: 100%
+					width: 100%
+					filter: grayscale(100%)
+				&:hover
+					img 
+						filter: grayscale(0%)
+					&:after
+						content: ''
+						position: absolute
+						width: 100%
+						height: 100%
+						box-shadow: 0 0 0 3px #00c4c9 inset
+						top: 0
+						left: 0
+.home-ceo
+	background-image: url(../img/bg-ceo.png)
+	background-size: cover
+	h2
+		+fw(700)
+		+title()
 	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
-		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+		.item
+			figure
+				.box-img-customer
+					display: flex
+					align-items: center
+					justify-content: center
+					img
+						border-radius: 50%
+						box-shadow: 0 0 0 5px #74b9ff
+						margin-right: 7rem
+						transform: translateX(-77%)
+						margin: 3rem 10rem 3rem 14rem
+				figcaption
+					.name
+						color: #74b9ff
+						font-size: 1.5rem
+				+media-breakpoint-up(md)
+					.box-img-customer
+						display: flex
+						align-items: center
+						justify-content: center
+						img
+							border-radius: 50%
+							box-shadow: 0 0 0 5px #74b9ff
+							margin-right: 7rem
+							transform: translateX(-35%)
+							margin: 3rem 10rem 3rem 14rem
+					figcaption
+						p
+							padding: 0 10rem
+				+media-breakpoint-up(xl)
+					.box-img-customer
+						display: flex
+						align-items: center
+						justify-content: center
+						img
+							border-radius: 50%
+							box-shadow: 0 0 0 5px #74b9ff
+							margin-right: 7rem
+							transform: translateX(-20%)
+							margin: 3rem 10rem 3rem 14rem
+.home-clients
+		background: white
+		.slide
+			.owl-carousel
+				.owl-nav
+					.owl-prev
+						width: 2rem
+						height: 2rem
+						background: #2c3e50
+						position: absolute
+						bottom: .5rem
+						left: -3rem
+						color: #dfdfdf
+					.owl-next
+						width: 2rem
+						height: 2rem
+						background: #2c3e50
+						position: absolute
+						bottom: .5rem
+						right: -3rem
+						color: #dfdfdf	
